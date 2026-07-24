@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noel Curtin | Frontend Developer</title>
     <style>
-      @import url("https://fonts.googleapis.com/css?family=Dekko|Lato:900|Rock+Salt");
+      @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
       * {
         margin: 0;
@@ -13,11 +13,16 @@
         box-sizing: border-box;
       }
 
-      body {
-        font-family: Arial, sans-serif;
+      html {
+        font-size: 100%;
       }
 
-      header {
+      body {
+        font-family: "Source Code Pro", monospace;
+        line-height: 1.6;
+      }
+
+      .hero {
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -26,55 +31,32 @@
       }
 
       .hero-content {
-        max-width: 700px;
+        max-width: 775px;
       }
 
       .hero-content h1 {
-        margin-bottom: 0.5rem;
+        font-family: "Libre Baskerville", serif;
+        font-size: 3rem;
+        margin-bottom: 1rem;
       }
 
-      .hero-content p {
-        line-height: 1.6;
+      .hero-actions {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
       }
 
-      /* .button {
-        background-color: #04aa6d;
+      .button {
+        background-color: #00356b;
         border: none;
-        border-radius: 90px;
-        color: white;
-        padding: 15px 32px;
+        border-radius: 4px;
+        color: #fff;
+        padding: 0.625rem 1.5rem;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        margin: 14px 2px;
+        /* margin: 14px 0; */
         cursor: pointer;
-      } */
-
-      /* From Uiverse.io by adamgiebl */
-      .button {
-        color: black;
-        text-decoration: none;
-        background: #fbca1f;
-        font-family: inherit;
-        padding: 0.6em 1.3em;
-        font-weight: 900;
-        font-size: 18px;
-        border: 3px solid black;
-        border-radius: 0.4em;
-        box-shadow: 0.1em 0.1em;
-        cursor: pointer;
-        display: inline-block;
-        margin: 14px 2px;
-      }
-
-      .button:hover {
-        transform: translate(-0.05em, -0.05em);
-        box-shadow: 0.15em 0.15em;
-      }
-
-      .button:active {
-        transform: translate(0.05em, 0.05em);
-        box-shadow: 0.05em 0.05em;
       }
     </style>
   </head>
@@ -82,11 +64,15 @@
     <header class="hero">
       <div class="hero-content">
         <h1>Noel Curtin</h1>
-        <p>Frontend Developer specializing in JavaScript, HTML/CSS, and digital automation.</p>
-
-        <p>Building responsive interfaces and tools that improve workflows.</p>
-        <a href="#resume" class="button">Resume</a>
-        <a href="#projects" class="button">Projects</a>
+        <p>
+          Frontend Developer specializing in JavaScript, HTML/CSS, and digital
+          automation. Building responsive interfaces and tools that improve
+          workflows.
+        </p>
+        <div class="hero-actions">
+          <a href="#resume" class="button">Resume</a>
+          <a href="#projects" class="button">Projects</a>
+        </div>
       </div>
     </header>
   </body>

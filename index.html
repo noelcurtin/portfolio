@@ -25,13 +25,25 @@
       .hero {
         min-height: 100vh;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
         padding: 2rem;
+      }
+
+      .nav ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+
+      .nav a {
+        color: #00356b;
+        text-decoration: none;
       }
 
       .hero-content {
         max-width: 775px;
+        align-self: center;
+        margin: auto 0;
       }
 
       .hero-content h1 {
@@ -55,13 +67,20 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        /* margin: 14px 0; */
         cursor: pointer;
       }
     </style>
   </head>
   <body>
     <header class="hero">
+      <nav class="nav">
+        <ul>
+          <li><a href="#professional">Professional Experience</a></li>
+          <li><a href="#projects">Featured Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
       <div class="hero-content">
         <h1>Noel Curtin</h1>
         <p>
@@ -71,14 +90,23 @@
         </p>
         <div class="hero-actions">
           <a
-            href="assets/Noel Curtin - Resume.pdf"
+            href="assets/Noel_Curtin_Resume.pdf"
             class="button"
             target="_blank"
+            rel="noopener noreferrer"
             >Resume</a
           >
           <a href="#projects" class="button">Projects</a>
         </div>
       </div>
     </header>
+
+    <section id="professional"></section>
+
+    <section id="projects"></section>
+
+    <section id="skills"></section>
+
+    <footer id="contact"></footer>
   </body>
 </html>

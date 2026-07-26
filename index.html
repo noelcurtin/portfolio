@@ -4,72 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noel Curtin | Frontend Developer</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      html {
-        font-size: 100%;
-      }
-
-      body {
-        font-family: "Source Code Pro", monospace;
-        line-height: 1.6;
-      }
-
-      .hero {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        padding: 2rem;
-      }
-
-      .nav ul {
-        display: flex;
-        list-style: none;
-        gap: 2rem;
-      }
-
-      .nav a {
-        color: #00356b;
-        text-decoration: none;
-      }
-
-      .hero-content {
-        max-width: 775px;
-        align-self: center;
-        margin: auto 0;
-      }
-
-      .hero-content h1 {
-        font-family: "Libre Baskerville", serif;
-        font-size: 3rem;
-        margin-bottom: 1rem;
-      }
-
-      .hero-actions {
-        display: flex;
-        gap: 1rem;
-        margin-top: 2rem;
-      }
-
-      .button {
-        background-color: #00356b;
-        border: none;
-        border-radius: 4px;
-        color: #fff;
-        padding: 0.625rem 1.5rem;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="hero">
@@ -101,12 +36,118 @@
       </div>
     </header>
 
-    <section id="professional"></section>
+    <section id="professional">
+      <div class="container">
+        <div class="row">
+          <h2>Professional Experience</h2>
+        </div>
+        <div class="job">
+          <div class="job-header">
+            <h3 class="job-title">Production Coordinator</h3>
+            <p class="job-dates">2021–2026</p>
+          </div>
+          <p class="company">Rakuten Kobo</p>
+          <ul>
+            <li>Built internal JavaScript automation tools</li>
+            <li>Developed responsive HTML email campaigns</li>
+            <li>Reduced campaign production time by 50%</li>
+            <li>Worked with APIs and marketing platforms</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <section id="projects"></section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h2>Projects</h2>
+        </div>
+        <div class="row">
+          <div class="project">
+            <p>Portfolio 2026 (this site)</p>
+            <p>Coming Soon</p>
+          </div>
+          <div class="project">
+            <p>Feature Friend</p>
+            <p>Internal Automation Tool</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section id="skills"></section>
+    <section id="skills">
+      <div class="container">
+        <div class="row">
+          <h2>Skills</h2>
+        </div>
+        <div class="row">
+          <div class="list">
+            <p>Languages</p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
 
-    <footer id="contact"></footer>
+          <div class="list">
+            <p>Frontend</p>
+            <ul>
+              <li>Responsive Design</li>
+              <li>Accessibility</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+
+          <div class="list">
+            <p>Tools</p>
+            <ul>
+              <li>Git</li>
+              <li>Oracle Responsys</li>
+              <li>Retool</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/noelcurtin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/noelcurtin"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="mailto:ncurtin@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Email</a
+          >
+        </li>
+        <li>
+          <a
+            href="assets/Noel_Curtin_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Résumé</a
+          >
+        </li>
+      </ul>
+      <br />
+      <p>© 2026 Noel Curtin</p>
+    </footer>
   </body>
 </html>

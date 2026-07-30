@@ -3,7 +3,15 @@
 :root {
   --primary-color: #00356b;
   --card-radius: 0.5rem;
-  --section-width: 1100px;
+  --section-width: 810px;
+
+  --background-dark: #000;
+  --background-light: #ffffff;
+  --surface-dark: #222;
+
+  --text-light: #ffffff;
+  --text-muted: #c5c5c5;
+  --text-dark: #000000;
 }
 
 /* =========================
@@ -39,16 +47,24 @@ h3 {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  /* padding: 0 2rem; */
+  background-color: var(--background-dark);
 }
 
 .nav {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
+  background-color: var(--surface-dark);
+  color: var(--text-light);
+  padding: 2rem;
 }
 
 section,
 footer {
   padding: 6.25rem 2rem;
+}
+
+footer {
+  background-color: var(--surface-dark);
 }
 
 .container {
@@ -61,17 +77,10 @@ footer {
   margin-bottom: 1rem;
 }
 
-.job-card,
 .project-card {
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
-  padding: 1rem;
   border-radius: var(--card-radius);
-  background-color: #fff;
-}
-
-.job-card {
-  max-width: 900px;
-  margin: 0 auto;
+  background-color: var(--background-light);
 }
 
 .project-card,
@@ -87,10 +96,11 @@ footer {
   display: flex;
   list-style: none;
   gap: 2rem;
+  justify-content: flex-end;
 }
 
 .nav a {
-  color: var(--primary-color);
+  color: var(--text-light);
   text-decoration: none;
 }
 
@@ -99,13 +109,18 @@ footer {
 ========================= */
 
 .hero-content {
-  max-width: 775px;
-  /* align-self: center; */
+  max-width: 810px;
   margin: auto;
+  padding: 0 2rem;
 }
 
 .hero-content h1 {
   font-size: 3rem;
+  color: var(--text-light);
+}
+
+.hero-content p {
+  color: var(--text-muted);
 }
 
 .hero-actions {
@@ -117,12 +132,17 @@ footer {
 .button {
   background-color: var(--primary-color);
   border-radius: 4px;
-  color: #fff;
+  color: var(--text-light);
   padding: 0.625rem 1.5rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+}
+
+.button-light {
+  background-color: var(--background-light);
+  color: var(--text-dark);
 }
 
 /* =========================
@@ -138,10 +158,6 @@ footer {
   margin-bottom: 1rem;
 }
 
-.job-card ul {
-  padding-left: 1.5rem;
-}
-
 /* =========================
    Projects
 ========================= */
@@ -149,7 +165,25 @@ footer {
 .projects-grid {
   display: flex;
   gap: 2rem;
-  /* justify-content: space-around; */
+  flex-wrap: wrap;
+}
+
+.project-card {
+  flex: 0 0 calc(50% - 1rem);
+}
+
+.project-image {
+  overflow: hidden;
+  border-radius: var(--card-radius) var(--card-radius) 0 0;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+}
+
+.project-text {
+  padding: 1rem;
 }
 
 /* =========================
@@ -159,11 +193,6 @@ footer {
 .skills-grid {
   display: flex;
   gap: 2rem;
-  /* justify-content: space-around; */
-}
-
-.skills-list {
-  padding-left: 1.5rem;
 }
 
 /* =========================
@@ -180,4 +209,14 @@ footer ul {
 footer p {
   text-align: center;
   margin-top: 2rem;
+  color: var(--text-light);
+}
+
+footer a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

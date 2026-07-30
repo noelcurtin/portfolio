@@ -9,12 +9,14 @@
   <body>
     <header class="hero">
       <nav class="nav">
-        <ul>
-          <li><a href="#professional">Professional Experience</a></li>
-          <li><a href="#projects">Featured Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="container">
+          <ul>
+            <li><a href="#professional">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </nav>
       <div class="hero-content">
         <h1>Noel Curtin</h1>
@@ -26,7 +28,7 @@
         <div class="hero-actions">
           <a
             href="assets/Noel_Curtin_Resume.pdf"
-            class="button"
+            class="button button-light"
             target="_blank"
             rel="noopener noreferrer"
             >Resume</a
@@ -39,19 +41,25 @@
     <section id="professional">
       <div class="container">
         <h2>Professional Experience</h2>
-        <div class="job-card">
+        <article class="job-card">
           <div class="job-header">
             <h3 class="job-title">Production Coordinator</h3>
             <p class="job-dates">2021–2026</p>
           </div>
           <p class="company">Rakuten Kobo</p>
-          <ul>
-            <li>Built internal JavaScript automation tools</li>
-            <li>Developed responsive HTML email campaigns</li>
-            <li>Reduced campaign production time by 50%</li>
-            <li>Worked with APIs and marketing platforms</li>
-          </ul>
-        </div>
+          <!-- <ul>
+          <li>Built internal JavaScript automation tools</li>
+          <li>Developed responsive HTML email campaigns</li>
+          <li>Reduced campaign production time by 50%</li>
+          <li>Worked with APIs and marketing platforms</li>
+        </ul> -->
+          <p class="job-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
+            delectus cupiditate laudantium animi tempora velit voluptatum,
+            excepturi iste maiores? Incidunt excepturi obcaecati eos doloremque
+            aliquam minus dignissimos necessitatibus mollitia illum?
+          </p>
+        </article>
       </div>
     </section>
 
@@ -59,22 +67,51 @@
       <div class="container">
         <h2>Projects</h2>
         <div class="projects-grid">
-          <div class="project-card">
-            <p>Project name</p>
-            <p>Screenshot</p>
-            <p>Short description</p>
-            <p>Technologies used</p>
-            <p>View Code</p>
-            <p>Live Demo</p>
-          </div>
-          <div class="project-card">
-            <p>Portfolio 2026 (this site)</p>
-            <p>Coming Soon</p>
-          </div>
-          <div class="project-card">
-            <p>Feature Friend</p>
-            <p>Internal Automation Tool</p>
-          </div>
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/images/project1.png" />
+            </div>
+            <div class="project-text">
+              <p>Project Name</p>
+              <p>Short description</p>
+              <p>Technologies used</p>
+              <div class="project-links">
+                <a href="">View Code</a>
+                <a href="">Live Demo</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/images/project1.png" />
+            </div>
+            <div class="project-text">
+              <p>Project Name</p>
+              <p>Short description</p>
+              <p>Technologies used</p>
+              <div class="project-links">
+                <a href="">View Code</a>
+                <a href="">Live Demo</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/project1.png"
+                alt="Screenshot of Portfolio 2026 project"
+              />
+            </div>
+            <div class="project-text">
+              <p>Project Name</p>
+              <p>Short description</p>
+              <p>Technologies used</p>
+              <div class="project-links">
+                <a href="">View Code</a>
+                <a href="">Live Demo</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>

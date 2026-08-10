@@ -35,7 +35,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Libre Baskerville", serif;
 }
 
@@ -72,7 +73,7 @@ footer {
   margin: 0 auto;
 }
 
-.container h2 {
+.section-title {
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -81,11 +82,6 @@ footer {
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
   border-radius: var(--card-radius);
   background-color: var(--background-light);
-}
-
-.project-card,
-.skills-list {
-  flex: 1;
 }
 
 /* =========================
@@ -186,13 +182,53 @@ footer {
   padding: 1rem;
 }
 
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.icon-row {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem 0;
+}
+
+.icon-row i {
+  font-size: 2rem;
+}
+
 /* =========================
    Skills
 ========================= */
 
 .skills-grid {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.skills-list {
+  width: 180px;
+}
+
+.skills-list p {
+  font-size: 1.25rem;
+}
+
+.skills-list hr {
+  width: 20%;
+  margin: 0.625rem 0;
+  border: 1px solid var(--text-dark);
+}
+
+.skills-list ul {
+  list-style: none;
+  /* text-wrap: nowrap; */
 }
 
 /* =========================
@@ -201,8 +237,8 @@ footer {
 
 footer ul {
   display: flex;
-  /* gap: 2rem; */
-  justify-content: space-around;
+  gap: 4rem;
+  justify-content: center;
   list-style: none;
 }
 
@@ -219,4 +255,14 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* =========================
+   Media Queries
+========================= */
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    flex: 0 0 calc(100% - 1rem);
+  }
 }

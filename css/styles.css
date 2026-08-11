@@ -224,6 +224,7 @@ main {
   max-width: 1100px;
   width: 95%;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .section {
@@ -260,7 +261,7 @@ main {
 }
 
 .about__role {
-  margin-top: 1.2em;
+  margin-top: 0.5rem;
 }
 
 .about__desc {
@@ -270,7 +271,7 @@ main {
 
 .about__desc,
 .about__contact {
-  margin-top: 2.4em;
+  margin-top: 2rem;
 }
 
 .about .link--icon {
@@ -280,6 +281,10 @@ main {
 .about .btn--outline {
   margin-right: 1em;
 }
+
+/* .projects {
+  padding: 0 1rem;
+} */
 
 .projects__grid {
   max-width: 1100px;

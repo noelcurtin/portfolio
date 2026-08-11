@@ -2,201 +2,223 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noel Curtin | Frontend Developer</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/068a42f04c.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Noel Curtin</title>
   </head>
-  <body>
-    <header class="hero">
-      <nav class="nav">
-        <div class="container">
-          <ul>
-            <li><a href="#professional">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="hero-content">
-        <h1>Noel Curtin</h1>
-        <p>
-          Frontend Developer specializing in JavaScript, HTML/CSS, and digital
-          automation. Building responsive interfaces and tools that improve
-          workflows.
-        </p>
-        <div class="hero-actions">
-          <a
-            href="assets/Noel_Curtin_Resume.pdf"
-            class="button button-light"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Resume</a
-          >
-          <a href="#projects" class="button">Projects</a>
-        </div>
-      </div>
-    </header>
-    <section id="professional">
-      <div class="container">
-        <h2 class="section-title">Professional Experience</h2>
-        <article class="job-card">
-          <div class="job-header">
-            <h3 class="job-title">Production Coordinator</h3>
-            <p class="job-dates">2021–2026</p>
-          </div>
-          <p class="company">Rakuten Kobo</p>
-          <!-- <ul> <li>Built internal JavaScript automation tools</li> <li>Developed responsive HTML email campaigns</li> <li>Reduced campaign production time by 50%</li> <li>Worked with APIs and marketing platforms</li> </ul> -->
-          <p class="job-description">
-            As a Production Coordinator at Rakuten Kobo, I developed and
-            deployed responsive HTML email templates and digital assets for CRM
-            marketing campaigns supporting global eBook, audiobook, and device
-            launches. Working from Figma designs, I translated mockups into
-            production-ready HTML/CSS, troubleshot rendering and compatibility
-            issues across major email clients, and performed quality assurance
-            to ensure reliable deployment. I also identified an opportunity to
-            automate a manual production workflow and independently developed an
-            internal tool that reduced weekly email production time by
-            approximately 50%, improved accuracy by minimizing manual coding
-            errors, and reduced engineering support required for routine
-            campaign production.
-          </p>
-        </article>
-      </div>
-    </section>
-    <section id="projects">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-image">
-              <img
-                src="assets/images/project1.png"
-                alt="Screenshot of my Portfolio 2026 website"
-              />
-            </div>
-            <div class="project-text">
-              <h4>Portfolio 2026</h4>
-              <p>A simple portfolio made with HTML, CSS, and JavaScript.</p>
-              <div class="icon-row">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css"></i>
-                <i class="fa-brands fa-square-js"></i>
-              </div>
-              <div class="project-links">
-                <a href=""><i class="fa-brands fa-github"></i> View Code</a>
-                <a href=""><i class="fa-solid fa-globe"></i> Live Demo</a>
-              </div>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-image">
-              <img src="assets/images/project1.png" />
-            </div>
-            <div class="project-text">
-              <p>Project Name</p>
-              <p>Short description</p>
-              <p>Technologies used</p>
-              <div class="project-links">
-                <a href="">View Code</a> <a href="">Live Demo</a>
-              </div>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-image">
-              <img
-                src="assets/images/project1.png"
-                alt="Screenshot of Portfolio 2026 project"
-              />
-            </div>
-            <div class="project-text">
-              <p>Project Name</p>
-              <p>Short description</p>
-              <p>Technologies used</p>
-              <div class="project-links">
-                <a href="">View Code</a> <a href="">Live Demo</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section id="skills">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-          <div class="skills-list">
-            <p>Languages</p>
-            <hr />
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-          </div>
-          <div class="skills-list">
-            <p>Frontend</p>
-            <hr />
-            <ul>
-              <li>Responsive Design</li>
-              <li>Accessibility</li>
-              <li>REST APIs</li>
-            </ul>
-          </div>
-          <div class="skills-list">
-            <p>Tools</p>
-            <hr />
-            <ul>
-              <li>Git</li>
-              <li>Oracle Responsys</li>
-              <li>Retool</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer id="contact">
-      <div class="container">
-        <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/noelcurtin/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
-            >
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://github.com/noelcurtin" class="link">NC.</a>
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
           </li>
-          <li>
-            <a
-              href="https://github.com/noelcurtin"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fa-brands fa-github"></i> GitHub</a
-            >
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
           </li>
-          <li>
-            <a
-              href="mailto:ncurtin@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fa-regular fa-envelope"></i> Email</a
-            >
-          </li>
-          <li>
-            <a
-              href="assets/Noel_Curtin_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fa-regular fa-file"></i> Résumé</a
-            >
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
           </li>
         </ul>
-        <p>© 2026 Noel Curtin</p>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I'm <span class="about__name">Noel Curtin.</span></h1>
+        <h2 class="about__role">A Front-End Developer.</h2>
+        <p class="about__desc">
+          Specializing in JavaScript, HTML/CSS, and digital automation. Building
+          responsive interfaces and tools that improve workflows.
+        </p>
+
+        <div class="about__contact center">
+          <a href="assets/Noel_Curtin_Resume.pdf">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/noelcurtin"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/noelcurtin/"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
       </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Project 1</h3>
+            <p class="project__description">
+              A responsive portfolio website built with HTML, CSS, and
+              JavaScript, featuring a responsive navigation menu, light/dark
+              theme switching, and mobile-friendly layouts.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">Git</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Project 2</h3>
+            <p class="project__description">
+              A JavaScript application that retrieves and processes data from a
+              REST API, dynamically rendering results in the browser.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">JavaScript</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <!-- <div class="project">
+            <h3>Project 3</h3>
+            <p class="project__description">
+              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+              sapiente debitis labore sed ipsam Mollitia repellat illum quod
+              unde beatae Quis
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">CSS</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">Responsive Design</li>
+          <li class="skills__list-item btn btn--plain">Accessibility</li>
+          <li class="skills__list-item btn btn--plain">REST APIs</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">Oracle Responsys</li>
+          <li class="skills__list-item btn btn--plain">Retool</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:ncurtin@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/rjshkhr/cleanfolio-minimal"
+        class="link footer__link"
+      >
+        Based on Cleanfolio Minimal by Raj Shekhar
+      </a>
     </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
